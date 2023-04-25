@@ -6,8 +6,8 @@
 header{
     background-color:rgb(151, 212, 212);
     width: 100%;
-    height: 20vh;
-    background-image: url("photo/header2.jpg");
+    height: 50vh;
+    
     color: antiquewhite;
     
 }
@@ -61,6 +61,7 @@ h3 {
     display: block;
     
 }
+
 #titre{
     width: 100%;
     text-align: center;
@@ -90,3 +91,191 @@ h4{
     text-align: center;
     margin-bottom: 8%;
 }
+
+
+  /*dark mode*/
+ 
+    .dark-mode {
+        background-color: rgb(163, 153, 168);
+        color: white;
+        
+    }
+    body{
+        transition: 500ms ease-in-out;
+    }
+    
+    button{
+        display:block;                /* Transformation en block */
+        min-width: 40px;             /* Largeur minimale des liens */   
+        
+        margin: 0.5rem;               /* Marges externes (1 valeurs = 4 directions) */
+        padding: 0.4rem 0;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
+        text-align: center;           /* Centrage du texte */   
+        background-color:rgb(243, 238, 238);    /* Couleur d'arrière-plan */
+        color:black;                  /* Couleur du texte */
+        text-decoration: none;        /* Suppression du soulignement */
+        border: 1px solid #fff;       /* Ajout d'une bordure */
+        border-radius: 4px; 
+    }
+    .dark-mode button{
+        color: white;
+        background-color:rgb(7, 7, 7) ;
+    
+    }
+    .dark-mode ul{
+        background-color:rgb(207, 37, 37) ;
+    } 
+    .dark-mode a{
+        background-color:rgb(10, 9, 10) ;
+        color: white;
+    } 
+    .menu button:hover{
+        background-color: #d41323;
+        cursor: pointer;
+    }
+  
+  /*menuburger*/
+    header
+    {
+    margin: 0;
+    padding: 0;
+    
+
+    background: #232323;
+    color: #cdcdcd;
+    font-family: "Avenir Next", "Avenir", sans-serif;
+    }
+
+
+    
+
+
+    #menuToggle
+    {
+    display: block;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    
+    z-index: 1;
+    
+    -webkit-user-select: none;
+    user-select: none;
+    }
+
+    #menuToggle a
+    {
+    text-decoration: none;
+    color: #232323;
+    
+    transition: color 0.3s ease;
+    }
+
+    #menuToggle a:hover
+    {
+    color: tomato;
+    }
+
+
+    #menuToggle input
+    {
+    display: block;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    
+    cursor: pointer;
+    
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+    
+    -webkit-touch-callout: none;
+    }
+
+
+    #menuToggle span
+    {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    
+    background: #cdcdcd;
+    border-radius: 3px;
+    
+    z-index: 1;
+    
+    transform-origin: 4px 0px;
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+    }
+
+    #menuToggle span:first-child
+    {
+    transform-origin: 0% 0%;
+    }
+
+    #menuToggle span:nth-last-child(2)
+    {
+    transform-origin: 0% 100%;
+    }
+
+
+    #menuToggle input:checked ~ span
+    {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+    }
+
+
+    #menuToggle input:checked ~ span:nth-last-child(3)
+    {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+
+    #menuToggle input:checked ~ span:nth-last-child(2)
+    {
+    transform: rotate(-45deg) translate(0, -1px);
+    }
+
+
+    #menu
+    {
+    position: absolute;
+    
+    width: 150px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    
+    
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    
+    
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+
+    #menu li
+    {
+    margin-left: 35px;
+    padding: 10px 0;
+    font-size: 22px;
+    }
+
+
+    #menuToggle input:checked ~ ul
+    {
+    transform: none;
+    }
