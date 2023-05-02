@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CV Geoffrey</title>
     <link rel="stylesheet" href="style.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   
+   <link rel="shortcut icon" href="photo/top-bon.png">
 </head>
     <header id="header">
 
@@ -21,17 +23,22 @@
             <span></span>
             <span></span>
             <span></span>
+
+          
             
             
             <ul id="menu">
                 <a href="#info"><li>information</li></a>
                 <a href="#competence"><li>Compétences</li></a>
                 <a href="#diplome"><li>formation et diplômes</li></a>
+                <a href="#Experience"><li>Experiences</li></a>
                 <a href="#hobbies"><li>Centre d'intérêts</li></a>
-                <a href="#contact"><li>Contact</li></a>
+                <a href="#Contact"><li>Contact</li></a>
                 <button onclick="themeToggle()"><i class="fa-solid fa-moon"></i></button>
             </ul>
+            
             </div>
+            <img src="photo/top-bon.png" alt="photo">
         </nav>
 
    
@@ -41,7 +48,7 @@
 
    
 
-        <section class="information" id="info">
+        <section class="information" id="info" data-aos="fade-left">
             <div id="titre"><h3>information</h3></div>
             <div id="photo"><img src="photo/moi.JPG" alt="photo"></div>
             <div id="info">
@@ -58,7 +65,8 @@
                
         </section>
 
-        <section class="competence" id="competence">
+        <section class="competence" id="competence" data-aos="fade-right">
+            
         <div id="titre"><h3>Compétences</h3></div>
                 <div id="hard"><h4>Hard Skills</h4><br>
                     <p><i class="fa-brands fa-html5"></i>HTML</p><br>
@@ -77,7 +85,7 @@
                <!-- </div> -->
         </section>
 
-        <section class="diplome" id="diplome">
+        <section class="diplome" id="diplome" data-aos="fade-left">
 
             <div id="titre"><h3>formation et diplômes</h3></div><br>
             <p>2017: <br> -Obtention du Diplôme Nationale du Brevet</p> <br>
@@ -103,18 +111,56 @@
                </div>
         </section>
 
-        <section class="Centre d'intérêts" id="hobbies">
+        <section class="Experience" id="Experience" data-aos="fade-right">
+
+            <div id="titre"><h3>Experiences Professionnelles</h3></div><br>
+            <p>12/2017: <br>-Stage d'un mois au Service technique à la mairie de Marquise </p> <br>
+
+            <p>06/2018: <br> -Stage d'un mois au Service technique à la mairie de Marquise</p><br>
+
+            <P></P>01/2019: <br>  -Stage d'un mois chez "Laurent Elec" à Marquise </p><br> 
+             
+
+            <p>06/2019: <br>  -Stage d'un mois chez "Citeos" à Saint Martin Boulogne  </p>
+
+            <p>09/2021-2022: <br>  - Apprenti éducateur sportif a wimereux
+            </p>
+            
+           
+            
+
+            <div class="arrow">
+                <a href="#header"><i class="fa-solid fa-arrow-up" style="color : #050505;"></i></a>
+               </div>
+        </section>
+
+
+        <section class="Centre d'intérêts" id="hobbies" data-aos="fade-left">
             <div id="titre"><h3>Centre d'intérêts</h3></div>  
-
+            <h4>Basket-Ball</h4>
            <img src="https://s-media-cache-ak0.pinimg.com/originals/79/07/bb/7907bb62e5e2d77255b4fe10770fae41.gif" />
-
+           <h4>jeu video</h4>
+            <img src="photo/téléchargement.jpg" alt="photo">
             <div id="arrow">
              <a href="#header"><i class="fa-solid fa-arrow-up" style="color : #050505;"></i></a>
             </div>
         </section>
 
-</body>
+        <section class="Contact" id="Contact" data-aos="fade-right">
+            <div id="titre"><h3>Contact</h3></div>  
+            <a href="mailto:geoffrey.noel08@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i>geoffrey.noel08@gmail.com</a><br>
+            <a href="tel:+07 69 94 20 83" target="_blank"><i class="fa-solid fa-phone"></i>07 69 94 20 83</a> <br>
+            <a href="http://github.com/Geoffrey184" target="_blank"><i class="fa-brands fa-github" style="color: #000000;"></i>Geoffrey184</a><br>
+            <a href="https://www.linkedin.com/in/geoffrey-noel-093683269/" target="_blank"><i class="fa-brands fa-linkedin" style="color: #1fa3f4;"></i>geoffrey-noel-093683269</a>
+            <div id="arrow">
+             <a href="#header"><i class="fa-solid fa-arrow-up" style="color : #050505;"></i></a>
+            </div>
+        </section>
+
+
 
 
 <script src="app.js"></script>
+
+</body>
 </html>
